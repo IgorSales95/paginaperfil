@@ -1,12 +1,12 @@
-const botaoLightMode = document.getElementById('light-mode');
+const botaoModoClaro = document.getElementById('modo-claro');
 const body = document.body;
 
-botaoLightMode.addEventListener('click', () => {
-  if (body.classList.contains('light-mode')) {
-    body.classList.remove('light-mode');
-    body.classList.add('mode-dark');
+botaoModoClaro.addEventListener('click', () => {
+  if (body.classList.contains('modo-claro')) {
+    body.classList.remove('modo-claro');
+    body.classList.add('modo-escuro');
   } else {
-    body.classList.remove('mode-dark');
-    body.classList.add('light-mode');
+    body.classList.remove('modo-escuro');
+    body.classList.add('modo-claro');
   }
 });
