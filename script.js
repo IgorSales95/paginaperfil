@@ -6,7 +6,7 @@ botaoLightMode.addEventListener('click', () => {
     body.classList.remove('light-mode');
     body.classList.add('mode-dark');
   } else {
-    body.classList.remove('modo-escuro');
-    body.classList.add('modo-claro');
+    body.classList.remove('mode-dark');
+    body.classList.add('light-mode');
   }
 });
