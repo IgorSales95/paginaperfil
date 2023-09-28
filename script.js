@@ -1,15 +1,12 @@
-function toggleMode() {
-  const html = document.documentElement
-  html.classList.toggle("light")
+const botaoLightMode = document.getElementById('light-mode');
+const body = document.body;
 
-  // pegar a tag img
-  const img = document.querySelector("#profile img")
-
-  // substituir a imagem
-  if (html.classList.contains("light")) {
-    // se tiver light mode, adicionar a imagem light
-    img.setAttribute('src', './assets/avatar-light.png')
+botaoLightMode.addEventListener('click', () => {
+  if (body.classList.contains('light-mode')) {
+    body.classList.remove('light-mode');
+    body.classList.add('mode-dark');
   } else {
-    // se tiver sem light mode, manter a imagem normal
+    body.classList.remove('modo-escuro');
+    body.classList.add('modo-claro');
   }
-}
+});
